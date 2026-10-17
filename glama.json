@@ -1,0 +1,7 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": ["xmond"],
+  "name": "Yishu Insight",
+  "description": "Deterministic I Ching casting and lookup, Zi Wei Dou Shu charts, compatibility, life trend, classical text search, and famous chart examples through seven MCP tools.",
+  "remoteUrl": "https://insightapp.life/mcp"
+}

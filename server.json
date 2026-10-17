@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.xmond/yishu-insight",
+  "title": "Yishu Insight",
+  "description": "Seven deterministic I Ching and Zi Wei Dou Shu reference and chart tools.",
+  "version": "1.0.0",
+  "websiteUrl": "https://insightapp.life",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "yishu-insight-mcp",
+      "version": "1.0.0",
+      "transport": {"type": "stdio"},
+      "runtimeHint": "npx"
+    }
+  ],
+  "remotes": [
+    {"type": "streamable-http", "url": "https://insightapp.life/mcp"}
+  ]
+}

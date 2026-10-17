@@ -1,0 +1,51 @@
+{
+  "name": "yishu-insight-mcp",
+  "version": "1.0.1",
+  "description": "MCP server for Yishu Insight (insightapp.life): deterministic I Ching divination and lookup offline, authoritative Zi Wei Dou Shu astrology charts via the remote engine. stdio, zero dependencies.",
+  "type": "module",
+  "mcpName": "io.github.xmond/yishu-insight",
+  "main": "./src/index.mjs",
+  "bin": {
+    "yishu-insight-mcp": "./bin/yishu-insight-mcp.mjs"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "data/",
+    "README.md",
+    "README.ja.md",
+    "README.zh-CN.md",
+    "Dockerfile",
+    "LICENSE",
+    "smithery.yaml",
+    "glama.json",
+    "server.json"
+  ],
+  "scripts": {
+    "test": "node --test test/mcp.test.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {},
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "i-ching",
+    "iching",
+    "zhouyi",
+    "ziwei",
+    "zi-wei-dou-shu",
+    "divination",
+    "cursor"
+  ],
+  "homepage": "https://insightapp.life",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xmond/yishu-insight-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xmond/yishu-insight-mcp/issues"
+  },
+  "license": "MIT"
+}

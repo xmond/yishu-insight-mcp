@@ -1,0 +1,23 @@
+# Legacy repository manifest for stdio discovery. Current Smithery URL publishing
+# uses https://smithery.ai/new; see docs/mcp-store/smithery-submission.md.
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      YISHU_INSIGHT_URL:
+        type: string
+        description: Base URL of the remote Yishu Insight service.
+        default: https://insightapp.life
+    additionalProperties: false
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', 'yishu-insight-mcp'],
+      env: { YISHU_INSIGHT_URL: config.YISHU_INSIGHT_URL || 'https://insightapp.life' }
+    })
+  exampleConfig:
+    YISHU_INSIGHT_URL: https://insightapp.life
+# Remote HTTP registration is separate: https://insightapp.life/mcp.
+# For a Smithery-hosted HTTP server, startCommand.type would be http;
+# this manifest does not claim to start or host that transport.
